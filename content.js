@@ -22,7 +22,7 @@
         overlay.style.opacity = '1';
 
         const gif = document.createElement('img');
-        gif.src = chrome.runtime.getURL('soma.gif'); 
+        gif.src = 'https://github.com/dixia731/Youtube-is-Soma/blob/main/soma.gif?raw=true'; 
         gif.style.width = '80%';
         gif.style.height = '80%';
         gif.style.objectFit = 'contain';
