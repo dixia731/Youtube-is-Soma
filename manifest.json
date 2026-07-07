@@ -1,23 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Brave YouTube Intro Fix",
-  "version": "2.0",
-  "description": "Forces a local soma.gif intro to play even on initial browser loads.",
-  "permissions": ["tabs"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "name": "Brave New YouTube",
+  "version": "1.0",
+  "description": "Plays a remote GIF for 6 seconds on loading Youtube.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "run_at": "document_start"
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["soma.gif"],
-      "matches": ["<all_urls>"]
     }
   ]
 }
